@@ -18,7 +18,7 @@ def first_digit_is_not_ok(digit, allow_leading_zero, number_string):
 #               generate_secret
 #============================================
 def generate_secret(length: int = 4, *, unique_digits: bool = True, allow_leading_zero: bool = False, rng: random.Random | None = None) -> str:
-
+     """generates a secret number according to the data that was passed"""
      secret = ""
 
      while len(secret) < length:
