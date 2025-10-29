@@ -9,6 +9,10 @@ def cow(index, guess, secret):
     """checks if the letter is in the secret"""
     return guess[index] in secret
 
+def is_won(bulls: int, length: int) -> bool:
+    """true if bulls equals length"""
+    return bulls == length
+
 def score_guess(secret: str, guess: str) -> tuple[int, int]:
     """counts the bulls and counts and returns the results"""
     bulls, cows = 0, 0
